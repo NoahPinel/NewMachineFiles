@@ -1,3 +1,4 @@
+" THIS IS PRETTY SIMPLE VIMRC
 " LOOKS
 syntax on
 set background=dark
