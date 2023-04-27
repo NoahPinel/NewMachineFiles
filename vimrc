@@ -1,17 +1,14 @@
-" THIS IS PRETTY SIMPLE VIMRC
-" LOOKS
+" My go to native vimrc for new machines.
+
 syntax on
 set background=dark
 set t_Co=256
-colorscheme pal
+colorscheme mies
 
 
-" open where left off
 if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-    \| exe "normal! g'\"" | endif
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 endif
-
 
 
 filetype plugin indent on
