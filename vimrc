@@ -2,7 +2,7 @@
 "  just removes the shit features so I can actually start using the
 "  computer...
 "
-"  Last edited -- 23/06 >> Noah Pinel
+"  Last edited -- 23/06 -- Noah Pinel
 
 
 syntax on
@@ -18,15 +18,14 @@ endif
 
 filetype plugin indent on
 
-
-set nowrap
-set showcmd             
-set showmatch           
-set ignorecase          
-set smartcase          
-set incsearch         
-set autowrite        
-set hidden          
-set mouse=a        
-set nu            
-set belloff=all        
+set noswapfile
+set showcmd             " Show (partial) command in status line.
+set showmatch           " Show matching brackets.
+set ignorecase          " Do case insensitive matching
+set smartcase           " Do smart case matching
+set incsearch           " Incremental search
+set autowrite           " Automatically save before commands like :next and :make
+set hidden              " Hide buffers when they are abandoned
+set mouse=a             " Enable mouse usage (all modes)
+set nu                  " NUM LINE
+set belloff=all         " BELL OFF
